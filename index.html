@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css?v=2022053101" />
+    <script src="js/helper.js?v=2022053101"></script>
+    <script src="js/svg.min.js?v=2022053101"></script>
+    <script src="js/index.js?v=2022053101"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="leftBar" class="left-bar">
+            <div class="collapse" id="btnCollapse"><span class="link-hide">收起</span><span class="link-show">展开</span></div>
+            <dl>
+                <dt>大矩形</dt>
+                <dd>长：<input id="bigRectWidth" type="number" value="" /> </dd>
+                <dd>宽：<input id="bigRectHeight" type="number" value="" /> </dd>
+            </dl>
+
+            <dl>
+                <dt>小矩形</dt>
+                <dd>长：<input id="smallRectWidth" type="number" value=""/></dd>
+                <dd>宽：<input id="smallRectHeight" type="number" value=""/></dd>
+            </dl>
+
+            <div class="btn-wrap">
+                <button id="btnOk">生成</button><br/>
+            </div>
+        </div>
+
+        <div class="svg-con">
+            <div id="rectInfo"></div>
+            <div id="tips" class="tips">这里是错误提示</div>
+            <div id="svgWrap" class="svg-wrap"></div>
+        </div>
+        
+        <div class="info">
+            <input id="fitHeight" type="checkbox" /> 高度适配
+        </div>
+        
+    </div>
+</body>
+</html>
